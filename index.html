@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="ELITE SPACES PK — Bespoke Architectural Living & Turnkey Engineering Atelier. Explore our signature scroll-to-build experience transforming structural blueprints into luxury residences.">
+  <meta name="theme-color" content="#FAF9F6">
+  <title>ELITE SPACES PK · Architectural Living &amp; Bespoke Estates</title>
+
+  <!-- Google Fonts: Cormorant Garamond, Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Fixed Viewport Scroll Progress Bar (Champagne Gold to Toasted Ochre) -->
+  <div class="scroll-progress-bar" id="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- Preloader Screen -->
+  <div class="preloader" id="preloader" aria-label="Loading ELITE SPACES PK">
+    <div class="preloader-brand">
+      <img src="./elite-spaces-logo.jpg" alt="ELITE SPACES PK" class="preloader-logo-img" />
+      <div class="preloader-line-track">
+        <div class="preloader-line-bar" id="preloader-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fixed Header (Warm Chalk Linen with Pale Greige Border) -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      <a href="#hero" class="brand-logo" aria-label="ELITE SPACES PK Home">
+        <img src="./elite-spaces-logo.jpg" alt="ELITE SPACES PK" class="brand-logo-img" />
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="#hero" class="nav-link active" data-section="hero">Home</a>
+        <a href="#proof" class="nav-link" data-section="proof">Proof</a>
+        <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+        <a href="#process" class="nav-link" data-section="process">Process</a>
+        <a href="#about" class="nav-link" data-section="about">Atelier</a>
+        <a href="#reviews" class="nav-link" data-section="reviews">Reviews</a>
+        <a href="#faq" class="nav-link" data-section="faq">FAQ</a>
+        <a href="#cta" class="nav-link" data-section="cta">Consult</a>
+      </nav>
+
+      <!-- Header CTAs (WhatsApp in Laurel Olive + Gold Consult) -->
+      <div class="header-cta-wrap">
+        <a href="https://wa.me/923214991253" target="_blank" rel="noopener noreferrer" class="btn-pill btn-olive btn-sm d-none-mobile" aria-label="Chat on WhatsApp">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+        <a href="#cta" class="btn-pill btn-gold btn-sm d-none-mobile">Consultation</a>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu-overlay">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Full-screen Navigation Overlay -->
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay" aria-hidden="true">
+    <ul class="mobile-nav-links">
+      <li><a href="#hero" class="mobile-nav-link" data-section="hero">Home</a></li>
+      <li><a href="#proof" class="mobile-nav-link" data-section="proof">Proof</a></li>
+      <li><a href="#projects" class="mobile-nav-link" data-section="projects">Projects</a></li>
+      <li><a href="#process" class="mobile-nav-link" data-section="process">Process</a></li>
+      <li><a href="#about" class="mobile-nav-link" data-section="about">Atelier</a></li>
+      <li><a href="#reviews" class="mobile-nav-link" data-section="reviews">Reviews</a></li>
+      <li><a href="#faq" class="mobile-nav-link" data-section="faq">FAQ</a></li>
+      <li><a href="#cta" class="mobile-nav-link" data-section="cta">Consult</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content Landmark -->
+  <main id="main-content">
+
+    <!-- SECTION 1: HERO (PINNED SCROLL-TO-BUILD STAGE) -->
+    <section class="hero-pinned-wrapper" id="hero" aria-label="Hero Introduction">
+      <div class="hero-stage" id="hero-stage">
+        
+        <!-- Dual-Layer Visual Transformation (Drafting Blueprint ➔ Sunlit Estate) -->
+        <div class="hero-visual-layer" id="hero-visual-layer">
+          <div class="hero-layer-framing">
+            <img 
+              src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=2000&q=80&auto=format" 
+              alt="Architectural drafting blueprint and structural foundation framing"
+              width="2000"
+              height="1333"
+              loading="eager"
+            />
+            <div class="blueprint-overlay"></div>
+            <div class="blueprint-schematic-lines"></div>
+            <div class="blueprint-grid-canvas"></div>
+            <div class="blueprint-tag" style="top: 22%; left: 10%;">ELEVATION: 00-A · ELITE SPACES PK ATELIER</div>
+          </div>
+
+          <div class="hero-layer-finished" id="hero-finished-layer">
+            <img 
+              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=2000&q=80&auto=format" 
+              alt="ELITE SPACES PK luxury contemporary residence in natural morning golden light"
+              width="2000"
+              height="1333"
+              loading="eager"
+            />
+          </div>
+        </div>
+
+        <div class="hero-scan-line" id="hero-scan-line"></div>
+        <div class="hero-vignette"></div>
+
+        <div class="container hero-content">
+          <div class="eyebrow" id="hero-eyebrow">
+            <span>Scroll to build</span>
+            <span class="eyebrow-line"></span>
+          </div>
+
+          <h1 class="hero-headline" id="hero-headline">
+            From frame to <em class="accent-gold italic">forever.</em>
+          </h1>
+
+          <p class="hero-paragraph" id="hero-paragraph">
+            We engineer and construct transcendent private estates and bespoke residences where structural rigor meets generational architectural living.
+          </p>
+
+          <div class="hero-actions" id="hero-actions">
+            <a href="#cta" class="btn-pill btn-gold">Book a design consult</a>
+            <a href="https://wa.me/923214991253" target="_blank" rel="noopener noreferrer" class="btn-pill btn-olive">
+              <span>Direct WhatsApp Desk</span>
+            </a>
+            <a href="#projects" class="btn-pill btn-outline">View projects</a>
+          </div>
+
+          <div class="hero-scroll-cue" id="hero-scroll-cue">
+            <div class="scroll-cue-line-track">
+              <div class="scroll-cue-line-runner"></div>
+            </div>
+            <span>Scroll to build</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 2: MARQUEE -->
+    <section class="marquee-section" id="marquee" aria-label="Architectural Highlights Ticker">
+      <div class="marquee-track" id="marquee-track">
+        <div class="marquee-content">
+          <span class="marquee-item">Bespoke Residences <span class="spark">✦</span> Structural Engineering <span class="spark">✦</span> Crafted to the Millimeter <span class="spark">✦</span></span>
+          <span class="marquee-item">Bespoke Residences <span class="spark">✦</span> Structural Engineering <span class="spark">✦</span> Crafted to the Millimeter <span class="spark">✦</span></span>
+          <span class="marquee-item">Bespoke Residences <span class="spark">✦</span> Structural Engineering <span class="spark">✦</span> Crafted to the Millimeter <span class="spark">✦</span></span>
+          <span class="marquee-item">Bespoke Residences <span class="spark">✦</span> Structural Engineering <span class="spark">✦</span> Crafted to the Millimeter <span class="spark">✦</span></span>
+        </div>
+        <div class="marquee-content" aria-hidden="true">
+          <span class="marquee-item">Bespoke Residences <span class="spark">✦</span> Structural Engineering <span class="spark">✦</span> Crafted to the Millimeter <span class="spark">✦</span></span>
+          <span class="marquee-item">Bespoke Residences <span class="spark">✦</span> Structural Engineering <span class="spark">✦</span> Crafted to the Millimeter <span class="spark">✦</span></span>
+          <span class="marquee-item">Bespoke Residences <span class="spark">✦</span> Structural Engineering <span class="spark">✦</span> Crafted to the Millimeter <span class="spark">✦</span></span>
+          <span class="marquee-item">Bespoke Residences <span class="spark">✦</span> Structural Engineering <span class="spark">✦</span> Crafted to the Millimeter <span class="spark">✦</span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: SOCIAL PROOF (PINNED ASSEMBLE STAGE) -->
+    <section class="proof-pinned-wrapper" id="proof" aria-label="Company Statistics and Social Proof">
+      <div class="proof-stage" id="proof-stage">
+        <div class="blueprint-grid-canvas"></div>
+        <div class="container">
+          <div class="proof-header">
+            <div class="eyebrow proof-eyebrow">
+              <span>Verified Engineering Portfolio</span>
+              <span class="eyebrow-line"></span>
+            </div>
+            <h2 class="proof-headline font-serif" id="proof-headline">
+              Trusted by hundreds of families.
+            </h2>
+          </div>
+
+          <div class="proof-grid" id="proof-grid">
+            <div class="proof-cell" data-quadrant="1">
+              <div class="proof-number-wrap">
+                <span class="counter-val" data-target="240">0</span><span class="accent-gold">+</span>
+              </div>
+              <div class="proof-label">Estates Delivered</div>
+            </div>
+
+            <div class="proof-cell" data-quadrant="2">
+              <div class="proof-number-wrap">
+                <span class="counter-val" data-target="18">0</span>
+              </div>
+              <div class="proof-label">Years of Engineering</div>
+            </div>
+
+            <div class="proof-cell" data-quadrant="3">
+              <div class="proof-number-wrap">
+                <span class="counter-val" data-target="32">0</span>
+              </div>
+              <div class="proof-label">Architectural Awards</div>
+            </div>
+
+            <div class="proof-cell" data-quadrant="4">
+              <div class="proof-number-wrap">
+                <span class="counter-val" data-target="9">0</span>
+              </div>
+              <div class="proof-label">Cities Built Across</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: FEATURED PROJECTS (PINNED ASSEMBLE STAGE) -->
+    <section class="projects-pinned-wrapper" id="projects" aria-label="Featured Architectural Projects">
+      <div class="projects-stage" id="projects-stage">
+        <div class="container">
+          <div class="projects-header">
+            <div>
+              <div class="eyebrow">
+                <span>Portfolio of Distinction</span>
+                <span class="eyebrow-line"></span>
+              </div>
+              <h2 class="projects-title font-serif">Featured Estates</h2>
+            </div>
+            <p class="text-muted" style="max-width: 420px;">
+              A curated index of cantilevered pavilions, contemporary courtyard manors, and mountain ridge compounds.
+            </p>
+          </div>
+
+          <div class="projects-grid" id="projects-grid"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: PROCESS (THE SIGNATURE SCROLL-TO-BUILD) -->
+    <section id="process" aria-label="Interactive Scroll to Build Process">
+      <div class="process-intro-section">
+        <div class="container">
+          <div class="eyebrow">
+            <span>Our Constructability Atelier</span>
+            <span class="eyebrow-line"></span>
+          </div>
+          <h2 class="process-intro-title font-serif" id="process-intro-title">
+            Watch every room get built.
+          </h2>
+          <p class="text-muted" style="max-width: 580px; margin: 1rem auto 0 auto;">
+            Scroll downward to witness our architectural transformations unfold from structural framing into finished living sanctuaries.
+          </p>
+        </div>
+      </div>
+
+      <!-- 4 Pinned Chapters: Kitchen, Bath, Lounge, Pool (Zero Percentages) -->
+      <div class="process-chapters-container" id="process-chapters-container"></div>
+    </section>
+
+    <!-- SECTION 6: ABOUT (PINNED ASSEMBLE STAGE) -->
+    <section class="about-pinned-wrapper" id="about" aria-label="About ELITE SPACES PK">
+      <div class="about-stage" id="about-stage">
+        <div class="container">
+          <div class="about-grid">
+            <div class="about-image-col">
+              <div class="about-image-wrapper" id="about-image-wrapper">
+                <img 
+                  src="https://images.unsplash.com/photo-1600585154363-67eb9e2e2099?w=2000&q=80&auto=format" 
+                  alt="ELITE SPACES PK master builder inspecting bespoke joinery" 
+                  class="about-image"
+                  id="about-image"
+                  width="2000"
+                  height="1333"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+
+              <!-- Rotating Champagne Gold Badge -->
+              <div class="about-badge" id="about-badge" aria-hidden="true">
+                <svg class="about-badge-svg" viewBox="0 0 120 120">
+                  <path id="badge-circle-path" d="M 60, 60 m -45, 0 a 45,45 0 1,1 90,0 a 45,45 0 1,1 -90,0" fill="transparent" />
+                  <text fill="var(--color-accent-gold)" font-size="10" font-family="var(--font-sans)" letter-spacing="2.6">
+                    ✦ ELITE SPACES PK ✦ BESPOKE ATELIER
+                  </text>
+                </svg>
+                <span class="about-badge-center">2008</span>
+              </div>
+            </div>
+
+            <div class="about-text-col">
+              <div class="eyebrow">
+                <span>Unified Atelier</span>
+                <span class="eyebrow-line"></span>
+              </div>
+              <h2 class="about-headline font-serif" id="about-headline">
+                One team, start to finish.
+              </h2>
+              <div class="about-paragraphs" id="about-paragraphs">
+                <p>
+                  Founded on the principle that transcendent architectural residences require absolute technical accountability, ELITE SPACES PK unites structural engineering, bespoke metal fabrication, and fine interior craftsmanship under one roof.
+                </p>
+                <p>
+                  Every residence is built with seismic-certified structural framing, hand-finished travertine stonework, and climate-responsive envelopes engineered to endure for generations. From subterranean foundation pilings to hand-mitred cabinetry, we eliminate the friction between blueprints and reality.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: TESTIMONIALS (PINNED ASSEMBLE STAGE) -->
+    <section class="reviews-pinned-wrapper" id="reviews" aria-label="Client Testimonials">
+      <div class="reviews-stage" id="reviews-stage">
+        <div class="container">
+          <div class="reviews-header">
+            <div class="eyebrow">
+              <span>Verified Homeowner Perspectives</span>
+              <span class="eyebrow-line"></span>
+            </div>
+            <h2 class="reviews-title font-serif">Words from our homeowners.</h2>
+          </div>
+
+          <div class="reviews-container" id="reviews-container">
+            <article class="review-card" data-direction="left">
+              <div class="review-stars" aria-label="5 out of 5 stars">
+                <svg viewBox="0 0 20 20"><path d="M10 1L13 7L20 7.5L15 12L16.5 19L10 15.5L3.5 19L5 12L0 7.5L7 7Z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M10 1L13 7L20 7.5L15 12L16.5 19L10 15.5L3.5 19L5 12L0 7.5L7 7Z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M10 1L13 7L20 7.5L15 12L16.5 19L10 15.5L3.5 19L5 12L0 7.5L7 7Z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M10 1L13 7L20 7.5L15 12L16.5 19L10 15.5L3.5 19L5 12L0 7.5L7 7Z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M10 1L13 7L20 7.5L15 12L16.5 19L10 15.5L3.5 19L5 12L0 7.5L7 7Z"/></svg>
+              </div>
+              <blockquote class="review-quote">
+                “Building a 9,400 sq ft contemporary residence in Sector E-7 with ELITE SPACES PK was seamless. Their engineering background meant complex cantilevered structural spans were executed with surgical precision.”
+              </blockquote>
+              <div class="review-author">
+                <div class="author-avatar-initial">TM</div>
+                <div class="author-meta">
+                  <span class="author-name">Tariq &amp; Mariam Malik</span>
+                  <span class="author-residence">Margalla Foothills Pavilion · Islamabad</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="review-card" data-direction="center">
+              <div class="review-stars" aria-label="5 out of 5 stars">
+                <svg viewBox="0 0 20 20"><path d="M10 1L13 7L20 7.5L15 12L16.5 19L10 15.5L3.5 19L5 12L0 7.5L7 7Z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M10 1L13 7L20 7.5L15 12L16.5 19L10 15.5L3.5 19L5 12L0 7.5L7 7Z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M10 1L13 7L20 7.5L15 12L16.5 19L10 15.5L3.5 19L5 12L0 7.5L7 7Z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M10 1L13 7L20 7.5L15 12L16.5 19L10 15.5L3.5 19L5 12L0 7.5L7 7Z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M10 1L13 7L20 7.5L15 12L16.5 19L10 15.5L3.5 19L5 12L0 7.5L7 7Z"/></svg>
+              </div>
+              <blockquote class="review-quote">
+                “The precision of their custom metal fabrication and joinery is unmatched. The deep ink navy culinary island and internal courtyard atrium were delivered on time and on budget.”
+              </blockquote>
+              <div class="review-author">
+                <div class="author-avatar-initial">ZK</div>
+                <div class="author-meta">
+                  <span class="author-name">Zubair Khan</span>
+                  <span class="author-residence">Gulberg Atrium Manor · Lahore</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="review-card" data-direction="right">
+              <div class="review-stars" aria-label="5 out of 5 stars">
+                <svg viewBox="0 0 20 20"><path d="M10 1L13 7L20 7.5L15 12L16.5 19L10 15.5L3.5 19L5 12L0 7.5L7 7Z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M10 1L13 7L20 7.5L15 12L16.5 19L10 15.5L3.5 19L5 12L0 7.5L7 7Z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M10 1L13 7L20 7.5L15 12L16.5 19L10 15.5L3.5 19L5 12L0 7.5L7 7Z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M10 1L13 7L20 7.5L15 12L16.5 19L10 15.5L3.5 19L5 12L0 7.5L7 7Z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M10 1L13 7L20 7.5L15 12L16.5 19L10 15.5L3.5 19L5 12L0 7.5L7 7Z"/></svg>
+              </div>
+              <blockquote class="review-quote">
+                “The subterranean private lounge with golf simulator and horizon reflection pool are triumphs of engineering. They treat luxury home construction like fine watchmaking.”
+              </blockquote>
+              <div class="review-author">
+                <div class="author-avatar-initial">SA</div>
+                <div class="author-meta">
+                  <span class="author-name">Suleman &amp; Ayesha Azam</span>
+                  <span class="author-residence">Clifton Coastal Villa · Karachi</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: FAQ (PINNED ASSEMBLE STAGE) -->
+    <section class="faq-pinned-wrapper" id="faq" aria-label="Frequently Asked Questions">
+      <div class="faq-stage" id="faq-stage">
+        <div class="container">
+          <div class="faq-header">
+            <div class="eyebrow">
+              <span>Engineering Specifications</span>
+              <span class="eyebrow-line"></span>
+            </div>
+            <h2 class="faq-title font-serif">Frequently asked questions.</h2>
+          </div>
+
+          <div class="faq-accordion-list" id="faq-accordion">
+            <div class="faq-item" data-direction="left">
+              <button class="faq-trigger" id="faq-btn-1" aria-expanded="false" aria-controls="faq-panel-1">
+                <span class="faq-question">What is your typical build timeline for a bespoke estate?</span>
+                <span class="faq-icon-wrap" aria-hidden="true">
+                  <svg class="faq-icon" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg>
+                </span>
+              </button>
+              <div class="faq-content" id="faq-panel-1" role="region" aria-labelledby="faq-btn-1">
+                <div class="faq-inner">
+                  Custom estates ranging from 6,000 to 14,000 square feet typically span 14 to 20 months from groundbreaking to key handover. Our pre-construction engineering phase covers structural modeling, MEP detailing, and material procurement to eliminate supply delays.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item" data-direction="right">
+              <button class="faq-trigger" id="faq-btn-2" aria-expanded="false" aria-controls="faq-panel-2">
+                <span class="faq-question">Can you collaborate with our independent architect?</span>
+                <span class="faq-icon-wrap" aria-hidden="true">
+                  <svg class="faq-icon" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg>
+                </span>
+              </button>
+              <div class="faq-content" id="faq-panel-2" role="region" aria-labelledby="faq-btn-2">
+                <div class="faq-inner">
+                  Yes. While we provide a comprehensive in-house architectural atelier, we frequently partner with world-renowned independent architectural firms, providing constructability audits, high-tolerance fabrication, and on-site engineering execution.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item" data-direction="left">
+              <button class="faq-trigger" id="faq-btn-3" aria-expanded="false" aria-controls="faq-panel-3">
+                <span class="faq-question">How are site inspections and remote progress tracked?</span>
+                <span class="faq-icon-wrap" aria-hidden="true">
+                  <svg class="faq-icon" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg>
+                </span>
+              </button>
+              <div class="faq-content" id="faq-panel-3" role="region" aria-labelledby="faq-btn-3">
+                <div class="faq-inner">
+                  Every site is documented with 360° Matterport scans and weekly drone photogrammetry. Clients access a secure digital portal tracking milestone timelines, material certifications, and scheduled video walk-throughs with their dedicated Project Director.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item" data-direction="right">
+              <button class="faq-trigger" id="faq-btn-4" aria-expanded="false" aria-controls="faq-panel-4">
+                <span class="faq-question">What structural warranty and aftercare do you provide?</span>
+                <span class="faq-icon-wrap" aria-hidden="true">
+                  <svg class="faq-icon" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg>
+                </span>
+              </button>
+              <div class="faq-content" id="faq-panel-4" role="region" aria-labelledby="faq-btn-4">
+                <div class="faq-inner">
+                  We guarantee our work with a comprehensive 10-year transferable structural warranty, a 2-year complete mechanical and electrical systems warranty, and scheduled seasonal preventive maintenance.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 9: FINAL CTA (PINNED ASSEMBLE STAGE) -->
+    <section class="cta-pinned-wrapper" id="cta" aria-label="Book a Design Consultation">
+      <div class="cta-stage" id="cta-stage">
+        <div class="cta-bg-gradient"></div>
+        <div class="blueprint-grid-canvas" id="cta-grid"></div>
+
+        <div class="container cta-container">
+          <div class="eyebrow" id="cta-eyebrow">
+            <span>Begin the Architectural Journey</span>
+            <span class="eyebrow-line"></span>
+          </div>
+
+          <h2 class="cta-headline font-serif" id="cta-headline">
+            Let’s build your retreat.
+          </h2>
+
+          <div class="cta-actions">
+            <div class="cta-btn-group">
+              <div class="btn-magnetic-wrap" id="cta-magnetic-wrap">
+                <a href="mailto:info@elitespaces.pk?subject=Bespoke%20Architectural%20Consultation" class="btn-pill btn-gold" id="cta-btn">
+                  Book a design consult
+                </a>
+              </div>
+              <a href="https://wa.me/923214991253" target="_blank" rel="noopener noreferrer" class="btn-pill btn-olive">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                <span>Direct WhatsApp Consultation</span>
+              </a>
+            </div>
+
+            <div class="cta-metrics" id="cta-metrics">
+              <div class="cta-metric-item">
+                <div class="cta-metric-title">10-Year Structural</div>
+                <div class="cta-metric-desc">Transferable engineering warranty</div>
+              </div>
+              <div class="cta-metric-item">
+                <div class="cta-metric-title">Dedicated Director</div>
+                <div class="cta-metric-desc">Single point of contact from blueprint to key</div>
+              </div>
+              <div class="cta-metric-item">
+                <div class="cta-metric-title">Guaranteed Handover</div>
+                <div class="cta-metric-desc">Locked milestone schedules with liquidated terms</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Circular Back to Top Button -->
+  <button class="back-to-top-btn" id="back-to-top" aria-label="Back to top of page">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 19V5M5 12l7-7 7 7" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-copy">
+        &copy; <span id="current-year">2026</span> ELITE SPACES PK. Architectural Living &amp; Bespoke Estates. All rights reserved.
+      </div>
+      <div class="footer-links">
+        <a href="#hero">Privacy Policy</a>
+        <a href="#hero">Engineering Standards</a>
+        <a href="#hero">HQ: Lahore, Punjab, Pakistan</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Entry Point (ES Module) -->
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
